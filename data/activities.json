@@ -1,0 +1,233 @@
+[
+  {
+    "id": "1770763852385",
+    "name": "Mathäser Kino",
+    "hidden": true,
+    "location": "München",
+    "weather": "egal",
+    "duration": "1-2 Stunden",
+    "type": [
+      "stadt"
+    ]
+  },
+  {
+    "id": "1770763892889",
+    "name": "Alte Pinakothek",
+    "hidden": true,
+    "location": "München",
+    "weather": "egal",
+    "duration": "1-2 Stunden",
+    "type": [
+      "entdecken",
+      "stadt"
+    ]
+  },
+  {
+    "id": "1770763926337",
+    "name": "Deutsches Museum",
+    "hidden": true,
+    "location": "München",
+    "weather": "egal",
+    "duration": "1-2 Stunden",
+    "type": [
+      "entdecken",
+      "stadt"
+    ]
+  },
+  {
+    "id": "1770763980777",
+    "name": "Schloss Blutenburg",
+    "hidden": true,
+    "location": "München",
+    "weather": "sonnig",
+    "duration": "Halber Tag",
+    "type": [
+      "natur",
+      "entdecken"
+    ]
+  },
+  {
+    "id": "1770764005349",
+    "name": "Olympiapark",
+    "hidden": true,
+    "location": "München",
+    "weather": "sonnig",
+    "duration": "Halber Tag",
+    "type": [
+      "natur",
+      "entdecken"
+    ]
+  },
+  {
+    "id": "1770764027957",
+    "name": "Flaucher chillen",
+    "hidden": true,
+    "location": "München",
+    "weather": "sonnig",
+    "duration": "Halber Tag",
+    "type": [
+      "entspannt",
+      "entdecken",
+      "natur"
+    ]
+  },
+  {
+    "id": "1770764276898",
+    "name": "Bahnwärter Thiel",
+    "hidden": true,
+    "location": "München",
+    "weather": "egal",
+    "duration": "1-2 Stunden",
+    "type": [
+      "stadt",
+      "entdecken",
+      "ausgehen"
+    ]
+  },
+  {
+    "id": "1770764319511",
+    "name": "Echt jetzt",
+    "hidden": true,
+    "location": "München",
+    "weather": "egal",
+    "duration": "1-2 Stunden",
+    "type": [
+      "entdecken",
+      "ausgehen"
+    ]
+  },
+  {
+    "id": "1770764413331",
+    "name": "Kühlschrank Magneten",
+    "hidden": true,
+    "location": "München",
+    "weather": "egal",
+    "duration": "1-2 Stunden",
+    "type": [
+      "kreativ",
+      "daheim",
+      "entspannt"
+    ]
+  },
+  {
+    "id": "1770764432518",
+    "name": "Kristalle Züchten",
+    "hidden": true,
+    "location": "München",
+    "weather": "egal",
+    "duration": "1-2 Stunden",
+    "type": [
+      "daheim",
+      "entspannt"
+    ]
+  },
+  {
+    "id": "1770764446683",
+    "name": "It takes two",
+    "hidden": false,
+    "location": "München",
+    "weather": "egal",
+    "duration": "1-2 Stunden",
+    "type": [
+      "daheim",
+      "entspannt"
+    ]
+  },
+  {
+    "id": "1770993599164",
+    "name": "Ohrring stechen lassen",
+    "hidden": true,
+    "location": "München",
+    "weather": "egal",
+    "duration": "1-2 Stunden",
+    "type": [
+      "stadt",
+      "entdecken"
+    ]
+  },
+  {
+    "id": "1770993617706",
+    "name": "Pinapple Park",
+    "hidden": true,
+    "location": "München",
+    "weather": "egal",
+    "duration": "1-2 Stunden",
+    "type": [
+      "entdecken",
+      "ausgehen"
+    ]
+  },
+  {
+    "id": "1770993628578",
+    "name": "Gorilla Bar",
+    "hidden": true,
+    "location": "München",
+    "weather": "egal",
+    "duration": "1-2 Stunden",
+    "type": [
+      "ausgehen",
+      "stadt",
+      "entdecken"
+    ]
+  },
+  {
+    "id": "1770993638077",
+    "name": "Spin Bar",
+    "hidden": true,
+    "location": "München",
+    "weather": "egal",
+    "duration": "1-2 Stunden",
+    "type": [
+      "entdecken",
+      "ausgehen",
+      "stadt"
+    ]
+  },
+  {
+    "id": "1770993964541",
+    "name": "Spinning",
+    "hidden": true,
+    "location": "München",
+    "weather": "egal",
+    "duration": "1-2 Stunden",
+    "type": [
+      "entdecken",
+      "sport"
+    ]
+  },
+  {
+    "id": "1770993973950",
+    "name": "Schwimmen",
+    "hidden": true,
+    "location": "München",
+    "weather": "egal",
+    "duration": "1-2 Stunden",
+    "type": [
+      "sport"
+    ]
+  },
+  {
+    "id": "1770993988389",
+    "name": "Tegernsee",
+    "hidden": true,
+    "location": "München",
+    "weather": "sonnig",
+    "duration": "Tagesausflug",
+    "type": [
+      "entdecken",
+      "natur"
+    ]
+  },
+  {
+    "id": "1770993999496",
+    "name": "Starnbergersee",
+    "hidden": true,
+    "location": "München",
+    "weather": "sonnig",
+    "duration": "Tagesausflug",
+    "type": [
+      "natur",
+      "entdecken"
+    ]
+  }
+]
