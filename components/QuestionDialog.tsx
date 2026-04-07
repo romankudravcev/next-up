@@ -36,7 +36,7 @@ export default function QuestionDialog({ open, activities, onClose, onComplete }
   }
 
   function finish() {
-    let filtered = activities.slice();
+    let filtered = activitiesArray.slice();
     if (location !== 'any') filtered = filtered.filter(a=>a.location===location);
     if (weather !== 'any') {
       if (weather === 'gutes') {
