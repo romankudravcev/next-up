@@ -1,12 +1,17 @@
 import { NextResponse } from "next/server";
 import { getActivities, addActivity, deleteActivity, updateActivity } from "../../../lib/activities";
+import { getUserFromRequest } from "../../../lib/auth";
 
-export async function GET() {
+export async function GET(request: Request) {
+  const user = await getUserFromRequest(request);
+  if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   const list = await getActivities();
   return NextResponse.json(list);
 }
 
 export async function POST(request: Request) {
+  const user = await getUserFromRequest(request);
+  if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   const body = await request.json();
   const required = ["name", "location", "weather", "duration", "type"];
   for (const k of required) {
@@ -26,6 +31,8 @@ export async function POST(request: Request) {
 }
 
 export async function PATCH(request: Request) {
+  const user = await getUserFromRequest(request);
+  if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   const body = await request.json();
   if (!body?.id) return NextResponse.json({ error: "Missing id" }, { status: 400 });
   const updated = await updateActivity(body.id, body);
@@ -34,6 +41,8 @@ export async function PATCH(request: Request) {
 }
 
 export async function DELETE(request: Request) {
+  const user = await getUserFromRequest(request);
+  if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   const body = await request.json();
   if (!body?.id) return NextResponse.json({ error: "Missing id" }, { status: 400 });
   const ok = await deleteActivity(body.id);
