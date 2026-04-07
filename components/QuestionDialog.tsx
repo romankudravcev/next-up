@@ -14,9 +14,10 @@ export default function QuestionDialog({ open, activities, onClose, onComplete }
   const [maxDuration, setMaxDuration] = useState('any');
   const [atypes, setAtypes] = useState<string[]>([]);
 
-  const locations = useMemo(()=>Array.from(new Set(activities.map(a=>a.location))).filter(Boolean),[activities]);
-  const weathers = useMemo(()=>Array.from(new Set(activities.map(a=>a.weather))).filter(Boolean),[activities]);
-  const types = useMemo(()=>Array.from(new Set(activities.flatMap(a=>Array.isArray(a.type)?a.type:[]))).filter(Boolean),[activities]);
+  const activitiesArray = Array.isArray(activities) ? activities : [];
+  const locations = Array.from(new Set(activitiesArray.map(a=>a.location))).filter(Boolean)
+  const weathers = Array.from(new Set(activitiesArray.map(a=>a.weather))).filter(Boolean)
+  const types = Array.from(new Set(activitiesArray.flatMap(a=>Array.isArray(a.type)?a.type:[]))).filter(Boolean)
 
   function next() { setStep(s=>Math.min(s+1,3)); }
   function back() { setStep(s=>Math.max(s-1,0)); }
