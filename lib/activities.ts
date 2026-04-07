@@ -12,7 +12,7 @@ export type Activity = {
 
 export async function getActivities(): Promise<Activity[]> {
   const rows = await prisma.activity.findMany();
-  return rows.map(r => ({
+  return rows.map((r: any) => ({
     id: r.id,
     name: r.name,
     location: r.location,
