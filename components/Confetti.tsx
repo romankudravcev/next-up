@@ -24,13 +24,13 @@ export default function Confetti({ play = false }: { play?: boolean }) {
     }
 
     function draw() {
-      ctx.clearRect(0,0,w,h);
+      ctx!.clearRect(0,0,w,h);
       let active = 0;
       for (const p of particles) {
         if (p.done) continue;
         p.x += p.vx; p.y += p.vy; p.vy += 0.05;
-        ctx.fillStyle = p.c;
-        ctx.fillRect(p.x, p.y, 6, 10);
+        ctx!.fillStyle = p.c;
+        ctx!.fillRect(p.x, p.y, 6, 10);
         if (p.y > h + 50) { p.done = true; }
         if (!p.done) active++;
       }
@@ -38,7 +38,7 @@ export default function Confetti({ play = false }: { play?: boolean }) {
         finished = true;
         cancelAnimationFrame(raf);
         // clear canvas after short delay so it appears to fall away
-        setTimeout(() => { ctx.clearRect(0,0,w,h); }, 300);
+        setTimeout(() => { ctx!.clearRect(0,0,w,h); }, 300);
         return;
       }
       raf = requestAnimationFrame(draw);
