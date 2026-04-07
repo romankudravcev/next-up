@@ -37,7 +37,9 @@ async function main() {
         }
       });
     } catch (e) {
-      console.error('failed item', a.id, e.message);
+      if (e instanceof Error) {
+        console.error('failed item', a.id, e.message);
+      }
     }
   }
   console.log('Seeded activities');
